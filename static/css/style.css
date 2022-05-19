@@ -672,8 +672,8 @@ mark {
 code,
 tt {
     position: relative;
-    margin: 0 0.333em;
-    padding: 0.333em 0.666em;
+    /* margin: 0 0.333em; */
+    /* padding: 0.333em 0.666em; */
     font-family: 'Inconsolata', monospace, sans-serif;
     font-size: 0.75em;
     white-space: pre;
@@ -719,8 +719,8 @@ pre code,
 pre tt {
     position: static;
     top: auto;
-    margin: -1.333em -1.333em -1.333em 1.333em;
-    padding: 1.333em;
+    /* margin: -1.333em -1.333em -1.333em 1.333em; */
+    /* padding: 1.333em; */
     overflow: scroll;
     font-size: 0.75em;
     line-height: 2em;
@@ -752,6 +752,11 @@ table {
     border: 1px solid #e5e4e1
 }
 
+table[class=highlighttable] {
+    margin: 0em 0;
+}
+
+
 table th,
 table td {
     position: relative;
@@ -760,6 +765,13 @@ table td {
     text-align: left;
     border: 1px solid #e5e4e1
 }
+
+table td[class=linenos],
+table td[class=code] {
+    line-height: 2em;
+    padding: 0.666em;
+}
+
 
 table th {
     font-family: 'Fira Sans', sans-serif;
@@ -968,7 +980,7 @@ img {
 }
 
 .inner {
-    max-width: 32em;
+    width: 65%;
     margin: 0 auto;
     padding: 0 2em
 }

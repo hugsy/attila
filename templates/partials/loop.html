@@ -17,6 +17,8 @@
                         <a href="{{ SITEURL }}/{{ author.url }}">{{ author_name }}</a>
                     {% endfor %}
                      | <time datetime="{{ article.locale_date }}">{{ article.locale_date }}</time>
+                     | Category: <a title="Category" class="category_link" href="{{ SITEURL }}/category/{{ article.category }}">{{ article.category }}</a>
+                     | Tags: {{ article.tags | join(', ') }}
                 </span>
                 <div class="clear"></div>
             </header>
