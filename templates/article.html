@@ -133,13 +133,15 @@
                     <div class="clear"></div>
                 </div>
 
-                <a title="Category" class="category_link" href="{{ SITEURL }}/category/{{ article.category }}">{{ article.category }}</a>
+                
               
                 {% if article.tags %}
                 <aside class="post-tags">
                     {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag | escape }}</a>{% if not loop.last %}{% endif %}{% endfor %}
                 </aside>
                 {% endif %}
+              
+               <a title="Category" style="font-weight: bold;" class="category_link" href="{{ SITEURL }}/category/{{ article.category }}">{{ article.category }}</a>
 
                 <div class="clear"></div>
 
