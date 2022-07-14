@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}{{ SITENAME }} - Articles in the {{ category }} category{% endblock %}
+{% block title %}{{ SITENAME }} - Category "{{ category }}" {% endblock %}
 
 {# <!-- Choosing cover image --> #}
 {% if category in HEADER_COVERS_BY_CATEGORY %}
